@@ -1,4 +1,12 @@
 
-palavra = input(str("Digite uma palavra para ser invertida: ")).upper()
+palavra = input(str("Digite uma palavra ou frase para ser invertida: "))
 
-print(palavra[::-1])
+cont = len(palavra)
+palavraInversa = ""
+
+for letra in palavra:
+   cont-=1
+   palavraInversa += palavra[cont]
+
+print(palavraInversa)
+
